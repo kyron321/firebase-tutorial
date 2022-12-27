@@ -1,8 +1,8 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import home from "pages/home/home";
-import create from "./pages/create/create";
-import search from "./pages/search/search";
-import recipe from "./pages/recipe/recipe";
+import Home from "./pages/home/Home";
+import Create from "./pages/create/Create";
+import Search from "./pages/search/Search";
+import Recipe from "./pages/recipe/Recipe";
 import "./App.css";
 
 function App() {
@@ -11,16 +11,16 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/">
-            <home />
+            <Home />
           </Route>
           <Route exact path="/create">
-            <create />
+            <Create />
           </Route>
           <Route exact path="/recipes/:id">
-            <recipe />
+            <Recipe />
           </Route>
           <Route exact path="/search">
-            <search />
+            <Search />
           </Route>
         </Switch>
       </BrowserRouter>

@@ -1,4 +1,4 @@
-import "./search.css"
+import "./Search.css"
 
 export default function create() {
   return (

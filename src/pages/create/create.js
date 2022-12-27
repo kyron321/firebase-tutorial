@@ -1,4 +1,4 @@
-import "./create.css"
+import "./Create.css"
 
 export default function create() {
   return (
