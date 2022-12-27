@@ -10,18 +10,18 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/create">
+          <Route path="/create">
             <Create />
           </Route>
-          <Route exact path="/recipes/:id">
+          <Route path="/recipes/:id">
             <Recipe />
           </Route>
-          <Route exact path="/search">
+          <Route path="/search">
             <Search />
           </Route>
         </Switch>
